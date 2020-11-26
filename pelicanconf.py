@@ -19,14 +19,15 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Pelican', 'https://getpelican.com/'),
-         ('Python.org', 'https://www.python.org/'),
-         ('Jinja2', 'https://palletsprojects.com/p/jinja/'),
-         ('You can modify those links in your config file', '#'),)
+LINKS = (('página inicial', 'https://vmussa.github.io/'),
+         ('portfólio', '#'),
+         ('tutoriais', '#'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('Github', '#'),
+          ('Twitter', '#'),
+          ('LinkedIn', '#'),
+          ('Lattes', '#'),)
 
 DEFAULT_PAGINATION = 10
 
@@ -35,3 +36,18 @@ DEFAULT_PAGINATION = 10
 
 # Theme
 THEME = '..\\pelican-themes\\Flex\\'
+
+# Analytics & Monetization
+GOOGLE_ANALYTICS = 'G-BD2LTYCV4K'
+GOOGLE_ADSENSE = {
+    'ca_id': 'ca-pub-3187686650481081',
+    'page_level_ads': True,          # Allow Page Level Ads (mobile)
+    'ads': {
+        'aside': '1234561',          # Side bar banner (all pages)
+        'main_menu': '1234562',      # Banner before main menu (all pages)
+        'index_top': '1234563',      # Banner after main menu (index only)
+        'index_bottom': '1234564',   # Banner before footer (index only)
+        'article_top': '1234565',    # Banner after article title (article only)
+        'article_bottom': '1234566', # Banner after article content (article only)
+    }
+}
