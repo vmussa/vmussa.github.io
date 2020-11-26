@@ -24,10 +24,10 @@ LINKS = (('página inicial', 'https://vmussa.github.io/'),
          ('tutoriais', '#'),)
 
 # Social widget
-SOCIAL = (('Github', '#'),
-          ('Twitter', '#'),
-          ('LinkedIn', '#'),
-          ('Lattes', '#'),)
+SOCIAL = (('GitHub', 'https://github.com/vmussa'),
+          ('Twitter', 'https://twitter.com/vitormussa'),
+          ('LinkedIn', 'https://www.linkedin.com/in/vmussa/'),
+          ('Lattes', 'http://lattes.cnpq.br/2934187748254130'),)
 
 DEFAULT_PAGINATION = 10
 
@@ -51,3 +51,4 @@ GOOGLE_ADSENSE = {
         'article_bottom': '1234566', # Banner after article content (article only)
     }
 }
+GOOGLE_TAG_MANAGER = 'GTM-NNQ7JK3'
