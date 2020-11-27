@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://vmussa.github.io/theme/stylesheet/style.min.css">
+
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="https://vmussa.github.io/theme/pygments/github.min.css">
+
+
+  <link rel="stylesheet" type="text/css" href="https://vmussa.github.io/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="https://vmussa.github.io/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="https://vmussa.github.io/theme/font-awesome/css/solid.css">
+
+
+
+
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'G-BD2LTYCV4K', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+
+<meta name="author" content="Vítor Mussa" />
+<meta name="description" content="Conheça o SDBase, um projeto que, através da própria prática de pesquisa, pode te ajudar a dar o primeiro passo no aprendizado de técnicas computacionais para as ciências sociais. Àqueles já iniciados, entenda como o SDBase pode facilitar a sua vida." />
+<meta name="keywords" content="sociologia-digital, sociologia-computacional, web-scraping, mineração de texto, text mining">
+
+
+<meta property="og:site_name" content="Ciência de Dados e Sociologia Computacional e Digital por Vítor Mussa"/>
+<meta property="og:title" content="SDBase: um projeto de facilitação e introdução à sociologia digital"/>
+<meta property="og:description" content="Conheça o SDBase, um projeto que, através da própria prática de pesquisa, pode te ajudar a dar o primeiro passo no aprendizado de técnicas computacionais para as ciências sociais. Àqueles já iniciados, entenda como o SDBase pode facilitar a sua vida."/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="https://vmussa.github.io/conheca-o-sdbase.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2020-11-27 12:30:00-03:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="https://vmussa.github.io/author/vitor-mussa.html">
+<meta property="article:section" content="Sociologia Digital e Computacional"/>
+<meta property="article:tag" content="sociologia-digital"/>
+<meta property="article:tag" content="sociologia-computacional"/>
+<meta property="article:tag" content="web-scraping"/>
+<meta property="article:tag" content="mineração de texto"/>
+<meta property="article:tag" content="text mining"/>
+<meta property="og:image" content="">
+
+  <title>Ciência de Dados e Sociologia Computacional e Digital por Vítor Mussa &ndash; SDBase: um projeto de facilitação e introdução à sociologia digital</title>
+
+<!-- Google Tag Manager -->
+<script>
+  (function(w,d,s,l,i){
+    w[l]=w[l]||[];
+    w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+    var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+    j.async=true;
+    j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+    f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-NNQ7JK3');
+</script>
+<!-- End Google Tag Manager --></head>
+<body class="light-theme">
+<!-- Google Tag Manager -->
+<noscript>
+  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NNQ7JK3" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager -->  <aside>
+    <div>
+      <a href="https://vmussa.github.io">
+        <img src="https://vmussa.github.io/theme/img/profile.png" alt="Vítor Mussa" title="Vítor Mussa">
+      </a>
+
+      <h1>
+        <a href="https://vmussa.github.io">Vítor Mussa</a>
+      </h1>
+
+<p>Ciência de Dados e Sociologia Computacional/Digital</p>
+
+      <nav>
+        <ul class="list">
+
+
+
+            <li>
+              <a target="_self" href="https://vmussa.github.io/" >página inicial</a>
+            </li>
+            <li>
+              <a target="_self" href="#" >portfólio</a>
+            </li>
+            <li>
+              <a target="_self" href="#" >tutoriais</a>
+            </li>
+            <li>
+              <a target="_self" href="#" >sobre mim</a>
+            </li>
+            <li>
+              <a target="_self" href="mailto:vtrmussa@gmail.com" >contato</a>
+            </li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+          <li>
+            <a  class="sc-github" href="https://github.com/vmussa" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a  class="sc-twitter" href="https://www.twitter.com/vitormussa" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a  class="sc-linkedin" href="https://www.linkedin.com/in/vmussa/" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+      </ul>
+    </div>
+
+  </aside>
+  <main>
+
+
+<article class="single">
+  <header>
+      
+    <h1 id="conheca-o-sdbase">SDBase: um projeto de facilitação e introdução à sociologia digital</h1>
+    <p>
+      Posted on sex 27 novembro 2020 in <a href="https://vmussa.github.io/category/sociologia-digital-e-computacional.html">Sociologia Digital e Computacional</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <p>O SDBase (Scripts Básicos para a Sociologia Digital) é um projeto <a href="https://github.com/vmussa/sdbase">já disponível no GitHub</a> que eu criei para facilitar a execução de projetos em Sociologia Digital e Computacional e, ao mesmo, atuar como uma forma de introdução àqueles que, embora ainda não tenham conhecimentos básicos de programação, desejam aprender e estudar objetos digitais.</p>
+<p>É comum encontrar por aí uma série de pacotes, programas e outras utilidades computacionais que auxiliam a análise quantitativa, mas pouco é produzido para a análise qualitativa (essa visão devo ao meu colega <a href="https://br.linkedin.com/in/waldoramalho">Waldo Ramalho</a>). Nesse sentido, o SDBase vem como uma forma de facilitar a obtenção de dados web e sua transformação para a análise. </p>
+<p>O projeto consiste em um conjunto de scripts, dos quais dois já estão disponíveis em versão inicial, um para o WhatsApp e outro para o Reddit. O primeiro recebe um registro de conversa no formato <code>txt</code> que pode ser exportado através do próprio aplicativo e o processa, transformando-o numa tabela <code>csv</code> estruturada para a análise. Esse é um dos passos iniciais para a mineração de texto. O segundo, por sua vez, permite a obtenção de dados de discussões realizadas no Reddit e sua exportação para arquivos <code>txt</code> estruturados de forma a permitir a análise qualitativa por meio da codificação em programas gratuitos como <a href="https://rqda.r-forge.r-project.org/">RQDA</a> e <a href="https://qualcoder.wordpress.com/">QualCoder</a>. As instruções para o uso e a instalação se encontram no <code>README.md</code> exibido <a href="https://github.com/vmussa/sdbase">na página inicial do repositório</a>.</p>
+<p>O uso dessas ferramentas pressupõe habilidades muito básicas, referentes à instalação do Python e execução dos scripts através da linha de comando. No entanto, ele não exige o conhecimento da sintaxe da linguagem, nem de lógica de programação, o que permite quebrar a barreira da computação para os usuários iniciantes ao mesmo tempo que os conduz nas primeiras etapas do aprendizado computacional. Além disso, isso tudo se dá no próprio processo de pesquisa, diferente de tutoriais que encontramos pela Internet em que o uso das técnicas é abstraído de um contexto de ciências sociais.</p>
+<p>O usuário mais avançado pode usufruir desses scripts básicos na construção de aplicações mais sofisticadas, de forma a poupar tempo e, na melhor das hipóteses, realizar um <code>pull request</code>. Portanto, convido todxs xs interessadxs a contribuir com o projeto, da forma que puderem e quiserem, seja desenvolvendo scripts novos ou existentes, sugerindo ideias no GitHub, melhorando as instruções para o uso dos scripts e o que mais desejarem. A ideia é que seja um projeto da comunidade para a comunidade. Estou disponível nas redes sociais para conversar. É só chamar.</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="https://vmussa.github.io/tag/sociologia-digital.html">sociologia-digital</a>
+      <a href="https://vmussa.github.io/tag/sociologia-computacional.html">sociologia-computacional</a>
+      <a href="https://vmussa.github.io/tag/web-scraping.html">web-scraping</a>
+      <a href="https://vmussa.github.io/tag/mineracao-de-texto.html">mineração de texto</a>
+      <a href="https://vmussa.github.io/tag/text-mining.html">text mining</a>
+    </p>
+  </div>
+
+
+
+
+
+</article>
+
+    <footer>
+<p>&copy;  </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Ciência de Dados e Sociologia Computacional e Digital por Vítor Mussa ",
+  "url" : "https://vmussa.github.io",
+  "image": "",
+  "description": ""
+}
+</script>
+
+
+</body>
+</html>
