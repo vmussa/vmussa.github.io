@@ -63,3 +63,21 @@ GOOGLE_TAG_MANAGER = 'GTM-NNQ7JK3'
 # Tests\development
 LOAD_CONTENT_CACHE = False
 DELETE_OUTPUT_DIRECTORY = False
+
+# Plugins
+PLUGIN_PATHS = ["..\\pelican-themes\\",]
+PLUGINS=["sitemap",]
+
+SITEMAP = {
+    "format": "xml",
+    "priorities": {
+        "articles": 0.5,
+        "indexes": 0.5,
+        "pages": 0.5
+    },
+    "changefreqs": {
+        "articles": "monthly",
+        "indexes": "daily",
+        "pages": "monthly"
+    }
+}
